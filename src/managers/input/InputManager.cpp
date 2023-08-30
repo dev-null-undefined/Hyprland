@@ -1217,7 +1217,7 @@ void CInputManager::warpMouseToConstraintMiddle(SConstraint* pConstraint) {
         const auto HINTSCALE  = PWINDOW->m_fX11SurfaceScaledBy;
 
         wlr_cursor_warp(g_pCompositor->m_sWLRCursor, nullptr, RELATIVETO.x + pConstraint->positionHint.x / HINTSCALE, RELATIVETO.y + pConstraint->positionHint.y / HINTSCALE);
-        wlr_seat_pointer_warp(pConstraint->constraint->seat, pConstraint->constraint->current.cursor_hint.x, pConstraint->constraint->current.cursor_hint.y);
+        //wlr_seat_pointer_warp(pConstraint->constraint->seat, pConstraint->constraint->current.cursor_hint.x, pConstraint->constraint->current.cursor_hint.y);
     }
 }
 
